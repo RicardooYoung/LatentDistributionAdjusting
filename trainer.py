@@ -19,7 +19,7 @@ import json
 
 
 
-def main():
+def cli_main():
     pl.seed_everything(727)
 
     # ------------
@@ -98,5 +98,5 @@ def main():
     trainer.fit(model, train_loader, val_loader)
 
 if __name__ == '__main__':
-    main()
+    cli_main()
 
