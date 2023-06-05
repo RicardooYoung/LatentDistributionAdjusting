@@ -13,4 +13,4 @@ Put your dataset in the folder ``data/``, and corresponding [dataset.py] in ``da
 ### Train
 
 Use *Bash train.sh* to train LDA model. The model consists many hyperparameters, which is stored in ``hyp/LDA.json``. 
-During training model's parameter will be automatically stored in ``results/`` on every epoch.
+During training model's parameter will be automatically stored in ``results/`` on every epoch, denoted with validation loss.
