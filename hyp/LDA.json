@@ -1,0 +1,14 @@
+{
+    "lr": 0.001,
+    "momentum": 0.9,
+    "weight_decay": 0.005,
+    "data_weight": 0.005,
+    "inter_weight": 0.05,
+    "intra_weight": 0.05,
+    "n_prototypes": 4,
+    "n_features": 512,
+    "inter_delta": 0.5,
+    "intra_delta": 0.5,
+    "scale": 2,
+    "margin": 0.5
+}
