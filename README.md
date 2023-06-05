@@ -1,7 +1,8 @@
 
 ## Latent Distribution Adjusting
 
-This is an unofficial implementations for Latent Distribution Adjusting(LDA). To refer the paper please click [here](https://arxiv.org/abs/2305.09285).
+This is an unofficial implementations for Latent Distribution Adjusting for Face Anti-Spoofing. 
+To refer the paper please click [here](https://arxiv.org/abs/2305.09285).
 
 ## How to use
 
