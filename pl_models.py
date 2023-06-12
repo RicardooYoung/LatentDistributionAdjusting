@@ -16,7 +16,8 @@ class LDA_PL(pl.LightningModule):
         self.hyp = hyp
         self.n_prototypes = self.hyp['n_prototypes']
         self.batch_size = batch_size
-        self.backbone = LDAModel(n_prototypes=self.hyp['n_prototypes'], n_features=self.hyp['n_features'])
+        self.backbone = LDAModel(n_prototypes=self.hyp['n_prototypes'], n_features=self.hyp['n_features'],
+                                 n_classes=self.hyp['n_classes'])
         self.epoch = epoch
         self.cls_loss = nn.CrossEntropyLoss()
         self.inter_loss = InterLoss(delta=self.hyp['inter_delta'])

@@ -5,11 +5,11 @@ from models.utils import cos_simularity
 from models.loss import *
     
 class LDAModel(nn.Module):
-    def __init__(self, n_prototypes, n_features) -> None:
+    def __init__(self, n_prototypes, n_features, n_classes) -> None:
         super().__init__()
-        self.backbone = timm.create_model('resnet50d', num_classes=0, pretrained=False)
+        self.backbone = timm.create_model('resnet34', num_classes=0, pretrained=False)
         self.fc = nn.Linear(2048, n_features)
-        self.classifier = nn.Linear(n_features, 2)
+        self.classifier = nn.Linear(n_features, n_classes)
         self.pos_prototype = nn.Parameter(torch.rand(n_features, n_prototypes))
         self.neg_prototype = nn.Parameter(torch.rand(n_features, n_prototypes))
         self.self_check()
