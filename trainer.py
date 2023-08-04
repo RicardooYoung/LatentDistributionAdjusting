@@ -65,7 +65,7 @@ def cli_main():
     # ------------
     # model
     # ------------
-    model = LDA_PL(epoch=args.epoch, hyp=hyp)
+    model = LDA_PL(epoch=args.epoch, batch_size=args.batch_size, hyp=hyp)
     ckpt_path = 'results'
     if not os.path.exists(ckpt_path):
         os.makedirs(ckpt_path)
